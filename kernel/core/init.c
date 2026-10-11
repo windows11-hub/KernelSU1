@@ -110,7 +110,7 @@ int __init kernelsu_init(void)
 #ifdef MODULE
     ksu_late_loaded = (current->pid != 1);
 #else
-    ksu_late_loaded = false;
+    ksu_late_loaded = true;
 #endif
 
 #ifdef CONFIG_KSU_DEBUG
